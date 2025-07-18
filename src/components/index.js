@@ -1,0 +1,5 @@
+export { Header as Header } from './Header/Header'
+export { AboutHero as AboutHero } from './AboutHero/AboutHero'
+export { SkillsSection as SkillsSection } from './SkillsSection/SkillsSection'
+export { FeaturedProjects as FeaturedProjects } from './FeaturedProjects/FeaturedProjects'
+export { Footer as Footer } from './Footer/Footer'

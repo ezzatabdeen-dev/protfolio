@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Brave Theme",
+    "description": "Quickly build custom HTML websites of any kind, and use our VIDE technology to accelerate your development and reduce QA time.",
+    "image": "/projects-images/bravetheme.jpg",
+    "repo": "https://github.com/ezzatabdeen-dev/Brave-Theeme",
+    "live": "https://ezzatabdeen-dev.github.io/Brave-Theeme/",
+    "tech": ["Html", "CSS", "JavaScript"]
+  },
+  {
+    "id": 2,
+    "name": "Admin Dashboard",
+    "description": "An admin dashboard is a user interface that allows administrators to manage and monitor various aspects of a website, application, or system.",
+    "image": "/projects-images/admindashboard.png",
+    "repo": "https://github.com/ezzatabdeen-dev/admin-dashboard",
+    "live": "https://admin-dashboard-five-tau-50.vercel.app/",
+    "tech": ["React", "CSS", "Vercel", "Material Ui"]
+  },
+  {
+    "id": 3,
+    "name": "Next Portfolio",
+    "description": "Elegant developer portfolio built with Next.js and Tailwind CSS.",
+    "image": "/projects-images/next-portfolio3.png",
+    "repo": "https://github.com/ezzatabdeen-dev/next-portfolio",
+    "live": "https://ezzatabdeen-dev.vercel.app/",
+    "tech": ["Next.js", "Tailwind CSS", "Vercel"]
+  },
+  {
+    "id": 4,
+    "name": "Next Portfolio",
+    "description": "Elegant developer portfolio built with Next.js and Tailwind CSS.",
+    "image": "/projects-images/next-portfolio4.png",
+    "repo": "https://github.com/ezzatabdeen-dev/next-portfolio",
+    "live": "https://ezzatabdeen-dev.vercel.app/",
+    "tech": ["Next.js", "Tailwind CSS", "Vercel"]
+  },
+  {
+    "id": 5,
+    "name": "Next Portfolio",
+    "description": "Elegant developer portfolio built with Next.js and Tailwind CSS.",
+    "image": "/projects-images/next-portfolio5.png",
+    "repo": "https://github.com/ezzatabdeen-dev/next-portfolio",
+    "live": "https://ezzatabdeen-dev.vercel.app/",
+    "tech": ["Next.js", "Tailwind CSS", "Vercel", "Next.js", "Tailwind CSS", "Vercel", "Next.js", "Tailwind CSS", "Vercel"]
+  },
+  {
+    "id": 6,
+    "name": "Next Portfolio",
+    "description": "Elegant developer portfolio built with Next.js and Tailwind CSS.",
+    "image": "/projects-images/next-portfolio5.png",
+    "repo": "https://github.com/ezzatabdeen-dev/next-portfolio",
+    "live": "https://ezzatabdeen-dev.vercel.app/",
+    "tech": ["Next.js", "Tailwind CSS", "Vercel"]
+  },
+  {
+    "id": 7,
+    "name": "Next Portfolio",
+    "description": "Elegant developer portfolio built with Next.js and Tailwind CSS.",
+    "image": "/projects-images/next-portfolio5.png",
+    "repo": "https://github.com/ezzatabdeen-dev/next-portfolio",
+    "live": "https://ezzatabdeen-dev.vercel.app/",
+    "tech": ["Next.js", "Tailwind CSS", "Vercel"]
+  },
+  {
+    "id": 8,
+    "name": "Next Portfolio",
+    "description": "Elegant developer portfolio built with Next.js and Tailwind CSS.",
+    "image": "/projects-images/next-portfolio5.png",
+    "repo": "https://github.com/ezzatabdeen-dev/next-portfolio",
+    "live": "https://ezzatabdeen-dev.vercel.app/",
+    "tech": ["Next.js", "Tailwind CSS", "Vercel"]
+  }
+]

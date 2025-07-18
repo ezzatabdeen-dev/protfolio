@@ -1,0 +1,49 @@
+.aboutHeroWrapper {
+  width: 65%;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+@media (max-width: 1250px) {
+  .aboutHeroWrapper {
+    width: 75% !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .aboutHeroWrapper {
+    width: calc(100% - 2rem) !important;
+  }
+}
+
+.aboutHeroTopContent {
+  gap: 1rem;
+  align-items: center;
+}
+
+.aboutHeroTopContent,
+.wrapperTopContentInfo,
+.aboutHeroBottomContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapperTopContentInfo,
+.aboutHeroBottomContent {
+  gap: 0.5rem;
+}
+
+.wrapperTopContentInfo {
+  text-align: center;
+}
+
+.wrapperTopContentInfo *:not(h1) {
+  color: var(--white-blue);
+}
+
+.aboutHeroBottomContent p {
+  color: var(--Slate-800);
+}

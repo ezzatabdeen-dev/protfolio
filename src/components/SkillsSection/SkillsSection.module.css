@@ -1,0 +1,115 @@
+.skillsWrapper {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+@media (max-width: 1250px) {
+  .skillsWrapper {
+    width: 75% !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .skillsWrapper {
+    width: calc(100% - 2rem) !important;
+  }
+}
+
+.skillsContainer {
+  margin-top: 2rem;
+}
+
+.skillsTitle {
+  padding: 0.5rem 0;
+}
+
+.tabs {
+  padding: 1rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.tabButton {
+  height: 2.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all var(--primary-transition);
+  background-color: var(--Slate-200);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transform: scale(1);
+}
+
+.tabButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 100%, #30f8f8 10%, #30f8f800 55%);
+  transition: opacity var(--primary-transition);
+  opacity: 0;
+  border-radius: 0.5rem;
+  z-index: -1;
+}
+
+.tabButton.active::before,
+.tabButton:hover::before {
+  opacity: 1;
+}
+
+.tabButton.active,
+.tabButton:hover {
+  text-shadow: 1px 1px #000a;
+  box-shadow: 0px 1px 15px -2px var(--white-blue);
+}
+
+.tabButton.active,
+.tabButton:hover {
+  color: var(--Slate-100);
+  background: linear-gradient(#006caa, #00c3ff);
+  box-shadow: 0px 1px 15px -2px var(--white-blue);
+  transform: scale(0.97);
+  will-change: transform;
+  transform-origin: center center;
+}
+
+.skillsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1.25rem 0;
+}
+
+@media (max-width: 768px) {
+  .skillsGrid {
+    justify-content: flex-start;
+  }
+}
+
+.skillCard {
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  background-color: var(--Slate-200);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+}
+
+.skillIcon {
+  line-height: 0;
+  margin-right: .125rem;
+}
