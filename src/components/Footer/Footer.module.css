@@ -70,7 +70,7 @@
 
 .resourcesItems a:hover,
 .social a:hover {
-  color: #007acc;
+  color: var(--dark-blue);
   transform: translateX(3px);
 }
 
@@ -78,4 +78,33 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.wraperLinksIcon {
+  width: 1.75rem;
+  height: 1.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.wraperLinksIcon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/bgIcon.svg) no-repeat center / contain;
+}
+
+.wraperLinksIcon svg {
+  color: #fff;
+  width: 55%;
+  height: 55%;
+  z-index: 1;
+}
+
+.wrapperFooterLogo {
 }

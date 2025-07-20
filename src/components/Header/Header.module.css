@@ -17,22 +17,6 @@
   transition: all var(--primary-transition);
 }
 
-.wrapperLogo {
-  width: clamp(150px, 30%, 180px);
-  height: 100% !important;
-  display: flex;
-  align-items: center;
-}
-
-.wrapperLogo a {
-  width: 100%;
-}
-
-.wrapperLogo img,
-.profileImg img {
-  width: 100%;
-}
-
 @media (max-width: 1250px) {
   .header {
     width: 90% !important;
@@ -154,6 +138,10 @@
   overflow: hidden;
   display: flex;
   align-items: center;
+}
+
+.profileImg img {
+  width: 100%;
 }
 
 .menuButton {

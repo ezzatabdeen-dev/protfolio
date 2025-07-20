@@ -1,5 +1,5 @@
 import styles from "./AboutHero.module.css";
-import Image from "next/image";
+import { ProtectedImage } from "@/components/index";
 
 export const AboutHero = () => {
   return (
@@ -8,8 +8,8 @@ export const AboutHero = () => {
         <div className={styles.aboutHeroWrapper}>
           <div className={styles.aboutHeroTopContent}>
             <div className={styles.imageWrapper}>
-              <Image
-                src="/profile-pic1.svg"
+              <ProtectedImage
+                src="/api/image/profile-pic1.svg"
                 alt="Ezzat Abdeen"
                 width={160}
                 height={160}

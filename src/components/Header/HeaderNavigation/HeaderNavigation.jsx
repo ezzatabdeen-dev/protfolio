@@ -3,13 +3,8 @@ import styles from "../Header.module.css";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
-import {
-  RiGithubFill,
-  RiLinkedinFill,
-  RiMenuLine,
-  RiCloseFill,
-} from "react-icons/ri";
+import { ProtectedImage } from "@/components/index";
+import { RiGithubFill, RiLinkedinFill, RiMenuLine, RiCloseFill } from "react-icons/ri";
 
 export const HeaderNavigation = () => {
   const pathname = usePathname();
@@ -95,13 +90,14 @@ export const HeaderNavigation = () => {
 
         {pathname !== "/" && (
           <div className={styles.profileImg}>
-            <Image
-              src="/profile-pic1.svg"
-              alt="Logo"
-              width={100}
-              height={100}
-              className={styles.brand}
-            />
+            <ProtectedImage
+                src="/api/image/profile-pic1.svg"
+                alt="Ezzat Abdeen"
+                width={100}
+                height={100}
+                className={styles.profileImage}
+                priority
+              />
           </div>
         )}
 

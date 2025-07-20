@@ -26,10 +26,47 @@ export default function LocaleLayout({ children }) {
         <Header />
         {children}
         <Footer />
+
+        {/* Script to block DevTools and right-click */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              document.addEventListener("contextmenu", (e) => e.preventDefault());
+
+              document.addEventListener("keydown", function (e) {
+                if (
+                  e.key === "F12" ||
+                  (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i") ||
+                  (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "j") ||
+                  (e.ctrlKey && e.key.toLowerCase() === "u") ||
+                  (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "c")
+                ) {
+                  e.preventDefault();
+                }
+              });
+
+              document.addEventListener("dragstart", (e) => e.preventDefault());
+
+              let devtoolsOpened = false;
+              setInterval(() => {
+                const start = performance.now();
+                debugger;
+                const duration = performance.now() - start;
+                if (duration > 100) {
+                  if (!devtoolsOpened) {
+                    devtoolsOpened = true;
+                    document.body.innerHTML = "";
+                  }
+                }
+              }, 500);
+            `,
+          }}
+        />
       </body>
     </html>
   );
 }
+
 
 /*
 import "./globals.css";

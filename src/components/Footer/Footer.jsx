@@ -2,10 +2,9 @@
 import styles from "./Footer.module.css";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
-import { MdEmail } from "react-icons/md";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaSquareGithub, FaLinkedin } from "react-icons/fa6";
+import { Logo } from "@/components/index";
+import { BiLogoGmail } from "react-icons/bi";
+import { RiGithubFill, RiLinkedinFill, RiFacebookFill } from "react-icons/ri";
 
 export const Footer = () => {
   const pathname = usePathname();
@@ -20,10 +19,10 @@ export const Footer = () => {
   ];
 
   const dataSocial = [
-    { id: 1, name: "ezzatabdeen.dev@gmail.com", path: "https://mail.google.com/mail/u/ezzatabdeen.dev@gmail.com", icon: MdEmail },
-    { id: 2, name: "linkedin.com/in/ezzatabdeen-dev", path: "https://www.linkedin.com/in/ezzatabdeen-dev/", icon: FaLinkedin },
-    { id: 3, name: "github.com/ezzatabdeen-dev", path: "https://github.com/ezzatabdeen-dev", icon: FaSquareGithub },
-    { id: 4, name: "facebook.com/ezzatabden.dev", path: "https://facebook.com/ezzatabden.dev", icon: FaFacebookSquare },
+    { id: 1, name: "ezzatabdeen.dev@gmail.com", path: "https://mail.google.com/mail/u/ezzatabdeen.dev@gmail.com", icon: BiLogoGmail },
+    { id: 2, name: "linkedin.com/in/ezzatabdeen-dev", path: "https://www.linkedin.com/in/ezzatabdeen-dev/", icon: RiLinkedinFill },
+    { id: 3, name: "github.com/ezzatabdeen-dev", path: "https://github.com/ezzatabdeen-dev", icon: RiGithubFill },
+    { id: 4, name: "facebook.com/ezzatabden.dev", path: "https://facebook.com/ezzatabden.dev", icon: RiFacebookFill },
   ];
 
   return (
@@ -31,17 +30,7 @@ export const Footer = () => {
       <div className={styles.FooterWrapper}>
         <div className={`borderBottom borderTop ${styles.wraperContent}`}>
           <div className={styles.leftContent}>
-            <div className={styles.wrapperFooterLogo}>
-              <Link href={"/"}>
-                <Image
-                  src="/brand.svg"
-                  alt="Logo"
-                  width={170}
-                  height={100}
-                  className={styles.brand}
-                />
-              </Link>
-            </div>
+            <Logo />
             <p className={`text-2`}>Full-Stack Web Developer & Entrepreneur</p>
           </div>
           <div className={styles.MiddleContent}>
@@ -81,7 +70,9 @@ export const Footer = () => {
                     rel="noopener noreferrer"
                     className={`text-2`}
                   >
-                    <Icon className={`text-4`} />
+                    <span className={styles.wraperLinksIcon}>
+                      <Icon className={`text-3`} />
+                    </span>
                     {link.name}
                   </a>
                 );
@@ -89,7 +80,7 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <p className={`text-3 textCenter`}>
+        <p className={`text-2 textCenter`}>
           © {currentYear} Ezzat Abdeen. All rights reserved.
         </p>
       </div>

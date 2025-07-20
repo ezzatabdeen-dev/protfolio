@@ -1,0 +1,13 @@
+.wrapperLogo {
+  width: clamp(150px, 30%, 180px);
+  display: flex;
+  align-items: center;
+}
+
+.wrapperLogo a {
+  width: 100%;
+}
+
+.wrapperLogo img {
+  width: 100%;
+}
