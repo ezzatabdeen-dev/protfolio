@@ -1,0 +1,228 @@
+.ContactWrapper {
+  width: 65%;
+  margin: 0 auto;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+@media (max-width: 1250px) {
+  .ContactWrapper {
+    width: 75% !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .ContactWrapper {
+    width: calc(100% - 2rem) !important;
+  }
+}
+
+.sectionTitle {
+  color: #1e3a8a;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.sectionDesc {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 3rem;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2rem;
+  direction: rtl;
+}
+
+.infoCards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.infoCard {
+  background: linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%);
+  padding: 1.5rem;
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.infoCard:hover {
+  transform: scale(.98);
+}
+
+.iconBox {
+  background: rgba(255, 255, 255, 0.2);
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.infoCard span {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  display: block;
+}
+
+.infoCard p {
+  font-weight: 600;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.contactForm {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.formGroup {
+  margin-bottom: 1.2rem;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f1f5f9;
+  outline: none;
+  transition: 0.3s;
+  font-family: inherit;
+}
+
+html[lang="en"] .formGroup input,
+html[lang="en"] .formGroup textarea {
+  direction: ltr;
+}
+
+html[lang="ar"] .formGroup input,
+html[lang="ar"] .formGroup textarea {
+  direction: rtl;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border-color: #3b82f6;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 1rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.submitBtn:hover {
+  background: #1d4ed8;
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+}
+
+@media (max-width: 1000px) {
+  .ContactWrapper {
+    width: 90% !important;
+  }
+  .contentGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.popupOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s ease;
+}
+
+.popupContent {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.4s ease;
+}
+
+.checkIcon {
+  font-size: 4rem;
+  color: #10b981;
+  margin-bottom: 1rem;
+}
+
+.popupContent h3 {
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+}
+
+.popupContent p {
+  color: #64748b;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.popupContent button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.6rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

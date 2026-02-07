@@ -1,0 +1,126 @@
+.ExperienceWrapper {
+  width: 65%;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+@media (max-width: 1250px) {
+  .ExperienceWrapper {
+    width: 75% !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .ExperienceWrapper {
+    width: calc(100% - 2rem) !important;
+  }
+}
+
+.sectionTitle {
+  color: #1e3a8a;
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.experienceGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.experienceCard {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  border: 1px solid #f0f4f8;
+}
+
+html[lang="en"] .experienceCard {
+  direction: ltr !important;
+}
+
+html[lang="ar"] .experienceCard {
+  direction: rtl !important;
+  align-items: flex-start;
+}
+
+.experienceCard:hover {
+  transform: translateY(-5px);
+}
+
+.iconWrapper {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  font-size: 1.2rem;
+}
+
+.iconBlue {
+  color: #3b82f6;
+  background: #eff6ff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 45px;
+  height: 45px;
+}
+.iconGreen {
+  color: #10b981;
+  background: #ecfdf5;
+  padding: 10px;
+  border-radius: 10px;
+  width: 45px;
+  height: 45px;
+}
+.iconPurple {
+  color: #8b5cf6;
+  background: #f5f3ff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 45px;
+  height: 45px;
+}
+.iconOrange {
+  color: #f59e0b;
+  background: #fffbeb;
+  padding: 10px;
+  border-radius: 10px;
+  width: 45px;
+  height: 45px;
+}
+
+.experienceCard h3 {
+  font-size: 1.1rem;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.experienceCard p {
+  font-size: 0.9rem;
+  color: #718096;
+  line-height: 1.6;
+}
+
+@media (max-width: 1000px) {
+  .ExperienceWrapper {
+    width: 95% !important;
+  }
+  .experienceGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,94 @@
+.InterestsWrapper {
+  width: 65%;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+@media (max-width: 1250px) {
+  .InterestsWrapper {
+    width: 75% !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .InterestsWrapper {
+    width: calc(100% - 2rem) !important;
+  }
+}
+
+.sectionTitle {
+  color: #1e3a8a;
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.interestsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 أعمدة في السطر الواحد */
+  gap: 1rem;
+  direction: rtl;
+}
+
+.interestCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0.5rem;
+  border-radius: 12px;
+  color: white;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.interestCard:hover {
+  transform: scale(0.98);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.iconBox {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.interestCard h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.blue {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+.green {
+  background: linear-gradient(135deg, #10b981, #059669);
+}
+.purple {
+  background: linear-gradient(135deg, #a855f7, #7e22ce);
+}
+.orange {
+  background: linear-gradient(135deg, #f97316, #ea580c);
+}
+
+@media (max-width: 1024px) {
+  .interestsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .InterestsWrapper {
+    width: 95% !important;
+  }
+  .interestsGrid {
+    grid-template-columns: 1fr;
+  }
+}

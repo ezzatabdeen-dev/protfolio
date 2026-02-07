@@ -1,0 +1,43 @@
+.FooterWrapper {
+  width: 65%;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+@media (max-width: 1250px) {
+  .FooterWrapper {
+    width: 75% !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .FooterWrapper {
+    width: calc(100% - 2rem) !important;
+  }
+}
+
+.FooterContainer {
+  background-color: #0f172a;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.content p {
+    color: #fff;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.content span {
+  color: #94a3b8;
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.copy {
+  color: #64748b !important;
+  margin: 0 !important;
+}

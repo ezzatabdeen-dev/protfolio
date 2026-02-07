@@ -1,0 +1,13 @@
+export { Header as Header } from "./Header/Header";
+export { Hero as Hero } from "./Hero/Hero";
+export { About as About } from "./About/About";
+export { Contact as Contact } from "./Contact/Contact";
+export { Education as Education } from "./Education/Education";
+export { Experience as Experience } from "./Experience/Experience";
+export { Footer as Footer } from "./Footer/Footer";
+export { Interests as Interests } from "./Interests/Interests";
+export { Skills as Skills } from "./Skills/Skills";
+export { ProtectedImage as ProtectedImage } from "./ProtectedImage/ProtectedImage";
+export { Logo as Logo } from "./Logo/Logo";
+export { HeaderNavigation as HeaderNavigation } from "./Header/HeaderNavigation/HeaderNavigation";
+export { LangSwitcher as LangSwitcher } from "./LangSwitcher/LangSwitcher";
