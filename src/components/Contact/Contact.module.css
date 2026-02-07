@@ -60,8 +60,16 @@
   transition: transform 0.3s ease;
 }
 
+html[lang="en"] .infoCard {
+  direction: ltr;
+}
+
+html[lang="ar"] .infoCard {
+  direction: rtl;
+}
+
 .infoCard:hover {
-  transform: scale(.98);
+  transform: scale(0.98);
 }
 
 .iconBox {
