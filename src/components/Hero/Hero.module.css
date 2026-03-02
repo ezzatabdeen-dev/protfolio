@@ -1,11 +1,10 @@
 .HeroWrapper {
   width: 65%;
   margin: 0 auto;
-  padding: 1.5rem 0;
+  padding: 1.25rem 0;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  gap: 1.75rem;
+  gap: 1.5rem;
 }
 
 @media (max-width: 1250px) {
@@ -15,7 +14,7 @@
 }
 
 @media (max-width: 1000px) {
-  .EducationWrapper {
+  .HeroWrapper {
     width: calc(100% - 2rem) !important;
   }
 }
@@ -28,13 +27,88 @@
   justify-content: center;
   color: white;
   text-align: center;
+  padding: 2rem 1rem;
   border-radius: 0 0 20px 20px;
 }
 
+.HeroWrapper {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
 .imageWrapper {
-  width: 200px;
   border: 4px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
+  padding: 5px;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.profileImage {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.HeroWrapper h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+.HeroWrapper p {
+  max-width: 600px;
+  opacity: 0.9;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .buttonGroup {
+    flex-direction: column;
+  }
+}
+
+.contactBtn,
+.cvBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contactBtn {
+  background-color: #2563eb;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cvBtn {
+  background-color: white;
+  color: #1e3a8a;
+}
+
+.contactBtn:hover,
+.cvBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1000px) {
+  .HeroWrapper h1 {
+    font-size: 1.8rem;
+  }
+}  border-radius: 50%;
   padding: 5px;
   margin-bottom: 1rem;
   display: inline-block;
