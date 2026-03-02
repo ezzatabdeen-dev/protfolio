@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
+  background-color: #333;
 }
 
 @media (max-width: 1250px) {
@@ -19,9 +20,6 @@
   }
 }
 
-
-
-
 .HeroContainer {
   background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #1e3a8a 100%);
   min-height: 500px;
@@ -32,15 +30,6 @@
   text-align: center;
   
   border-radius: 0 0 20px 20px;
-}
-
-.HeroWrapper {
-  width: 65%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
 }
 
 .imageWrapper {
@@ -59,13 +48,11 @@
 .HeroWrapper h1 {
   font-weight: 700;
   margin: 0;
-  width: 100%;
 }
 
 .HeroWrapper p {
   max-width: 600px;
   opacity: 0.9;
-  width: 100%;
 }
 
 .buttonGroup {
