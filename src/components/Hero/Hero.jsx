@@ -1,4 +1,4 @@
-import styles from "./Hero.module.css";
+HeroWrapperapper styles from "./Hero.module.css";
 import Link from "next/link";
 import { ProtectedImage } from "@/components/index";
 import { FaPhoneAlt, FaDownload } from "react-icons/fa";
@@ -6,7 +6,7 @@ import { FaPhoneAlt, FaDownload } from "react-icons/fa";
 export const Hero = ({ data }) => {
   return (
     <div className={`container ${styles.HeroContainer}`}>
-      <div className={styles.HeroWrapper}>
+      <div className={styles.HerooWrapper}>
         <section id="hero" className={styles.HeroWrapper}>
           <div className={styles.imageWrapper}>
             <ProtectedImage
