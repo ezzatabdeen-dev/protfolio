@@ -1,5 +1,5 @@
 .HeroWrapper {
-  width: 65%;
+  width: 85%;
   margin: 0 auto;
   padding: 1.5rem 0;
   display: flex;
@@ -10,7 +10,7 @@
 
 @media (max-width: 1250px) {
   .HeroWrapper {
-    width: 75% !important;
+    width: 90% !important;
   }
 }
 
