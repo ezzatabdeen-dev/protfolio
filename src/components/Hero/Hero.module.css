@@ -1,16 +1,15 @@
 .HeroWrapper {
-  width: 85%;
+  width: 65%;
   margin: 0 auto;
   padding: 1.5rem 0;
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
-  background-color: #333;
 }
 
 @media (max-width: 1250px) {
   .HeroWrapper {
-    width: 90% !important;
+    width: 75% !important;
   }
 }
 
