@@ -7,7 +7,7 @@ const en = {
     contact: "Contact",
   },
   hero: {
-    name: "Ezzat Abdeen Abdelrahman Ahmed",
+    name: "Ezzat Abdeen",
     title: "Junior Web Developer | MIS Student",
     description: "A recent graduate specializing in web development and data management, I am seeking an opportunity to develop my technical skills and contribute to professional projects.",
     contact: "Contact Me",
@@ -109,7 +109,7 @@ const en = {
     },
   },
   footer: {
-    name: "Ezzat Abdeen Abdel Rahman Ahmed",
+    name: "Ezzat Abdeen",
     text: "Junior Web Developer | Management Information Systems Graduate",
     ownership: "All rights reserved",
   },
