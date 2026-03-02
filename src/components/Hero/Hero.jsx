@@ -6,7 +6,6 @@ import { FaPhoneAlt, FaDownload } from "react-icons/fa";
 export const Hero = ({ data }) => {
   return (
     <div className={`container ${styles.HeroContainer}`}>
-      <div className={styles.HeroWrapper}>
         <section id="hero" className={styles.HeroWrapper}>
           <div className={styles.imageWrapper}>
             <ProtectedImage
@@ -34,7 +33,6 @@ export const Hero = ({ data }) => {
             </Link>
           </div>
         </section>
-      </div>
     </div>
   );
 };
