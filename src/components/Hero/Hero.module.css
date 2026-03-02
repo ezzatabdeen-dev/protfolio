@@ -20,6 +20,7 @@
 }
 
 .HeroContainer {
+  /* التدرج اللوني للخلفية */
   background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #1e3a8a 100%);
   min-height: 500px;
   display: flex;
@@ -27,8 +28,8 @@
   justify-content: center;
   color: white;
   text-align: center;
-  padding: 2rem 1rem;
-  border-radius: 0 0 20px 20px;
+  padding: 4rem 1rem;
+  border-radius: 0 0 20px 20px; /* إذا كنت تريد حواف دائرية في الأسفل */
 }
 
 .HeroWrapper {
@@ -37,7 +38,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .imageWrapper {
@@ -54,12 +55,16 @@
 }
 
 .HeroWrapper h1 {
+  font-size: 2.5rem;
   font-weight: 700;
   margin: 0;
 }
 
 .HeroWrapper p {
+  font-size: 1.2rem;
+  font-weight: 300;
   max-width: 600px;
+  line-height: 1.6;
   opacity: 0.9;
 }
 
@@ -69,22 +74,15 @@
   margin-top: 1.5rem;
 }
 
-@media (max-width: 600px) {
-  .buttonGroup {
-    flex-direction: column;
-  }
-}
-
-.contactBtn,
-.cvBtn {
+.contactBtn, .cvBtn {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 0.5rem;
   padding: 0.6rem 1.5rem;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   font-weight: 600;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .contactBtn {
@@ -98,80 +96,22 @@
   color: #1e3a8a;
 }
 
-.contactBtn:hover,
-.cvBtn:hover {
+.contactBtn:hover, .cvBtn:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 1250px) {
+  .HeroWrapper { width: 75% !important; }
+}
+
 @media (max-width: 1000px) {
-  .HeroWrapper h1 {
-    font-size: 1.8rem;
-  }
-}  border-radius: 50%;
-  padding: 5px;
-  margin-bottom: 1rem;
-  display: inline-block;
+  .HeroWrapper { width: calc(100% - 2rem) !important; }
+  .HeroWrapper h1 { font-size: 1.8rem; }
 }
-
-.profileImage {
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.HeroWrapper h1 {
-  font-weight: 700;
-  margin: 0;
-}
-
-.HeroWrapper p {
-  max-width: 600px;
-  opacity: 0.9;
-}
-
-.buttonGroup {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-
+ 
 @media (max-width: 600px) {
   .buttonGroup {
     flex-direction: column;
-  }
-}
-
-.contactBtn,
-.cvBtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.6rem 1.5rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.contactBtn {
-  background-color: #2563eb;
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.cvBtn {
-  background-color: white;
-  color: #1e3a8a;
-}
-
-.contactBtn:hover,
-.cvBtn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 1000px) {
-  .HeroWrapper h1 {
-    font-size: 1.8rem;
   }
 }
