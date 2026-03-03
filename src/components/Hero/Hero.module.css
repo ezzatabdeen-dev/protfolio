@@ -1,10 +1,10 @@
 .HeroWrapper {
   width: 65%;
   margin: 0 auto;
-  padding: 1.25rem 0;
+  padding: 0.625rem 0;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 0.75rem;
 }
 
 @media (max-width: 1250px) {
@@ -20,7 +20,6 @@
 }
 
 .HeroContainer {
-  /* التدرج اللوني للخلفية */
   background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #1e3a8a 100%);
   min-height: 500px;
   display: flex;
@@ -28,8 +27,8 @@
   justify-content: center;
   color: white;
   text-align: center;
-  padding: 4rem 1rem;
-  border-radius: 0 0 20px 20px; /* إذا كنت تريد حواف دائرية في الأسفل */
+  
+  border-radius: 0 0 20px 20px;
 }
 
 .HeroWrapper {
