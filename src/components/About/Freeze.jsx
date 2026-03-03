@@ -3,7 +3,7 @@
 import React, { useEffect } from 'react';
 import styles from './Freeze.module.css';
 
-const Freeze = () => {
+export const Freeze = () => {
   useEffect(() => {
     // منع التمرير وحماية الصفحة
     document.documentElement.style.overflow = 'hidden';
@@ -42,5 +42,3 @@ const Freeze = () => {
     </div>
   );
 };
-
-export default Freeze;
