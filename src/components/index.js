@@ -11,3 +11,4 @@ export { ProtectedImage as ProtectedImage } from "./ProtectedImage/ProtectedImag
 export { Logo as Logo } from "./Logo/Logo";
 export { HeaderNavigation as HeaderNavigation } from "./Header/HeaderNavigation/HeaderNavigation";
 export { LangSwitcher as LangSwitcher } from "./LangSwitcher/LangSwitcher";
+export { Freeze as Freeze } from "./About/Freeze";
