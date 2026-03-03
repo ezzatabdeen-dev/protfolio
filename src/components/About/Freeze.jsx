@@ -34,7 +34,7 @@ export const Freeze = () => {
   return (
     <div className={styles.overlay}>
       <h1 className={styles.errorText}>
-        Error 410: <br /> The developer has left life.
+        Error 410
       </h1>
     </div>
   );
