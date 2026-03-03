@@ -1,0 +1,32 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+  cursor: none;
+  user-select: none;
+  pointer-events: all;
+}
+
+.errorText {
+  color: #ff0000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: clamp(1.2rem, 4vw, 2.5rem);
+  text-align: center;
+  line-height: 1.6;
+  text-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch {
+  2%, 64% { transform: translate(2px, 0) skew(0deg); }
+  4%, 60% { transform: translate(-2px, 0) skew(0deg); }
+  62% { transform: translate(0, 0) skew(5deg); }
+}
