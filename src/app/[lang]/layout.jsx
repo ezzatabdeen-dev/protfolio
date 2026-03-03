@@ -34,7 +34,7 @@ export default async function RootLayout({ children, params }) {
         <meta name="theme-color" content="#0071E0" />
       </head>
       <body>
-        
+        <Freeze />
         <Header dict={dict} />
         {children}
       </body>
