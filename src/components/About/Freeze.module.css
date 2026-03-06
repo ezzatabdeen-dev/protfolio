@@ -1,43 +1,35 @@
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0,0,0,.8);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999999;
-  cursor: none;
-  user-select: none;
-  pointer-events: all;
-  touch-action: none;
-}
-
-.errorText {
-  color: #ff0000;
-  font-family: "Courier New", monospace;
-  font-size: clamp(.9rem, 2vw, 1.4rem);
-  text-align: center;
-  line-height: 1.8;
-  letter-spacing: 2px;
-  opacity:.8;
-
-  text-shadow:
-    0 0 8px rgba(255,80,80,.4),
-    0 0 20px rgba(255,0,0,.15);
-
-  animation: flicker 3s infinite;
-}
-
-.errorText div:first-child {
-  font-weight: bold;
-}
-
-@keyframes flicker {
-  0%,18%,22%,25%,53%,57%,100% {opacity:.8}
-  20%,24%,55% {opacity:.4}
-}
+.overlay {  
+  overlay: fixed;  
+  top: 0;  
+  left: 0;  
+  width: 100vw;  
+  height: 100vh;  
+  background: rgba(0, 0, 0,.8);   
+  backdrop-filter: blur(30px);  
+    -webkit-backdrop-filter: blur(30px);  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  z-index: 999999;  
+  cursor: none;  
+  user-select: none;  
+  pointer-events: all;   
+  touch-action: none;  
+}  
+  
+.errorText {  
+  color: #ff0000;  
+  font-family: 'Courier New', Courier, monospace;  
+  font-size: clamp(1.2rem, 4vw, 2.5rem);  
+  text-align: center;  
+  line-height: 1.6;  
+  font-weight: 900;  
+  text-shadow: 0 0 20px rgba(255, 0, 0, 1), 0 0 40px rgba(0, 0, 0, 0.5);  
+  animation: flicker 2s infinite;  
+}  
+  
+@keyframes flicker {  
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }  
+  20%, 24%, 55% { opacity: 0.5; }  
+}  
+ 
