@@ -41,12 +41,3 @@ export const Freeze = () => {
     </div>
   );
 };
-  return (
-    <div className={styles.overlay}>
-      <div className={styles.errorText} title="Resource was permanently removed.">
-        <div>Error 410</div>
-        <div>17.05.2019 — 06.03.2026</div>
-      </div>
-    </div>
-  );
-};
