@@ -35,6 +35,8 @@ export const Freeze = () => {
     <div className={styles.overlay}>
       <h1 className={styles.errorText}>
         Error 410
+17/5/2019
+5/3/2026 💔
       </h1>
     </div>
   );
