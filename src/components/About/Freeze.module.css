@@ -18,13 +18,13 @@
 }
 
 .errorText {
-  color: rgba(255, 80, 80, 0.8);
+  color: #ff0000;
   font-family: "Courier New", monospace;
   font-size: clamp(.9rem, 2vw, 1.4rem);
   text-align: center;
   line-height: 1.8;
   letter-spacing: 2px;
-  opacity: .8;
+  opacity:.8;
 
   text-shadow:
     0 0 8px rgba(255,80,80,.4),
