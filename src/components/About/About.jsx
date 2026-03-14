@@ -5,7 +5,7 @@ export const About = ({ data }) => {
     <div className={`container ${styles.AboutContainer}`}>
       <div className={styles.AboutoWrapper}>
         <section id="about" className={styles.AboutItem}>
-          <h2 className="text-6 line-6 sectionTitlBbefore">{data.title}</h2>
+          <h2 className="text-4 line-4 sectionTitlBbefore">{data.title}</h2>
           <p className="text-3 line-3">{data.text}</p>
         </section>
       </div>
