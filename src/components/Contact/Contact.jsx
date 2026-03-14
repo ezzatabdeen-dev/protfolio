@@ -17,7 +17,6 @@ export const Contact = ({ data }) => {
     setIsSending(true);
 
     const formData = new FormData(e.target);
-    // المفتاح الخاص بك من الصورة المرفقة
     formData.append("access_key", "36f9a2d0-d1f5-4b61-8e75-13046a339d37");
 
     try {
@@ -45,7 +44,7 @@ export const Contact = ({ data }) => {
     <div className={`container ${styles.ContactContainer}`}>
       <div className={styles.ContactWrapper}>
         <section id="contact">
-          <h2 className={styles.sectionTitle}>{data.title}</h2>
+          <h2 className={`${styles.sectionTitle} text-5 line-5`}>{data.title}</h2>
           <p className={styles.sectionDesc}>{data.description}</p>
 
           <div className={styles.contentGrid}>
