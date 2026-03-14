@@ -47,7 +47,7 @@ export const Skills = ({ data }) => {
     <div className={`container ${styles.SkillsContainer}`}>
       <div className={styles.SkillsWrapper}>
         <section id="skills" className={`${styles.SkillsItem}`}>
-          <h2 className={`${styles.mainTitle} text-6 line-6 sectionTitlBbefore`}>{data.title}</h2>
+          <h2 className={`${styles.mainTitle} text-5 line-5 sectionTitlBbefore`}>{data.title}</h2>
 
           <div className={styles.cardsGrid}>
             <div className={styles.skillCard}>
