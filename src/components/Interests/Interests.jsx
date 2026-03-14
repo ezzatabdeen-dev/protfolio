@@ -21,7 +21,7 @@ export const Interests = ({ data }) => {
     <div className={`container ${styles.InterestsContainer}`}>
       <div className={styles.InterestsWrapper}>
         <section id="interests">
-          <h2 className={`${styles.sectionTitle} tex-6 line-6 sectionTitlBbefore`}>{data.title}</h2>
+          <h2 className={`${styles.sectionTitle} tex-5 line-5 sectionTitlBbefore`}>{data.title}</h2>
 
           <div className={styles.interestsGrid}>
             {data.items.map((item, idx) => (
