@@ -5,7 +5,7 @@ export const Education = ({ data }) => {
     <div className={`container ${styles.EducationContainer}`}>
       <div className={styles.EducationWrapper}>
         <section id="education" className={styles.EducationItem}>
-          <h2 className={`text-6 line-6 sectionTitlBbefore`}>{data.title}</h2>
+          <h2 className={`text-5 line-5 sectionTitlBbefore`}>{data.title}</h2>
           <div>
             {data.items.map((item, idx) => (
               <div key={idx}>
