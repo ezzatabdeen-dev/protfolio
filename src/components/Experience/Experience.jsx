@@ -26,7 +26,7 @@ export const Experience = ({ data }) => {
     <div className={`container ${styles.ExperienceContainer}`}>
       <div className={styles.ExperienceWrapper}>
         <section id="experience" className={styles.ExperienceItem}>
-          <h2 className={`${styles.sectionTitle} text-6 line-6 sectionTitlBbefore`}>{data.title}</h2>
+          <h2 className={`${styles.sectionTitle} text-5 line-5 sectionTitlBbefore`}>{data.title}</h2>
 
           <div className={styles.experienceGrid}>
             {data.items.map((item) => (
