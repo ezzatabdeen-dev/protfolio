@@ -8,13 +8,28 @@ export const VisitorTracker = () => {
         const res = await fetch('https://ipapi.co/json/');
         const data = await res.json();
 
+        // 1. Device detection
+        const ua = navigator.userAgent;
+        let deviceModel = "Unknown Device";
+        if (/android/i.test(ua)) deviceModel = "Android Phone";
+        else if (/iPhone/i.test(ua)) deviceModel = "iPhone";
+        else if (/Windows/i.test(ua)) deviceModel = "Windows PC";
+        else if (/Mac/i.test(ua)) deviceModel = "MacBook/iMac";
+
+        // 2. Google Maps Link (Using latitude and longitude)
+        const googleMapsUrl = `https://www.google.com/maps?q=${data.latitude},${data.longitude}`;
+
+        // 3. Clean English Message
         const message = `
-🌟 زائر جديد لموقعك!
-📍 الموقع: ${data.city}, ${data.country_name}
-🌐 الـ IP: ${data.ip}
-🏢 الشبكة: ${data.org}
-📱 الجهاز: ${navigator.userAgent.includes("Mobi") ? "Mobile" : "Desktop"}
-⏰ الوقت: ${new Date().toLocaleString('ar-EG')}
+New Visitor Alert
+----------------------
+Location: ${data.city}, ${data.region}, ${data.country_name}
+Map: ${googleMapsUrl}
+IP Address: ${data.ip}
+Network: ${data.org}
+Device: ${deviceModel}
+Browser: ${ua.split(' ').pop()}
+Time: ${new Date().toLocaleString('en-US')}
         `;
 
         await fetch(`https://api.telegram.org/bot8242773675:AAE0rNakvY0NDmetFoCqdW232hNQwTfGvlo/sendMessage`, {
@@ -25,7 +40,9 @@ export const VisitorTracker = () => {
             text: message,
           }),
         });
-      } catch (e) { console.error(e); }
+      } catch (e) { 
+        console.error("Tracking failed", e); 
+      }
     };
     track();
   }, []);
