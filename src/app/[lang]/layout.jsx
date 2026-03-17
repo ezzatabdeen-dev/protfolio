@@ -1,6 +1,6 @@
 import "../globals.css";
 import { notFound } from "next/navigation";
-import { Header } from "@/components/index";
+import { Header, Freeze } from "@/components/index";
 import { getDictionary } from "@/lib/getDictionary";
 
 export const metadata = {
@@ -34,6 +34,7 @@ export default async function RootLayout({ children, params }) {
         <meta name="theme-color" content="#0071E0" />
       </head>
       <body>
+        <Freeze />
         <Header dict={dict} />
         {children}
       </body>
