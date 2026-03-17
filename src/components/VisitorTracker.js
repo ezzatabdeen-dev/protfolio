@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from 'react';
 
-export default function VisitorTracker() {
+export const VisitorTracker = () => {
   useEffect(() => {
     const track = async () => {
       try {
