@@ -14,7 +14,8 @@
   cursor: none;  
   user-select: none;  
   pointer-events: all;   
-  touch-action: none;  
+  touch-action: none;
+  padding: 0 1rem; 
 }  
   
 .errorText {  
@@ -24,13 +25,11 @@
   text-align: center;  
   line-height: 1.6;  
   font-weight: 900;  
-  text-shadow: 0 0 20px rgba(255, 0, 0, 1), 0 0 40px rgba(0, 0, 0, 0.5);  
-  animation: glitch 1s linear infinite;
+  text-shadow: 0 0 20px rgba(255, 0, 0, 1), 0 0 40px rgba(0, 0, 0, 0.5);
+  animation: flicker 2s infinite;
 }
 
-@keyframes glitch {
-  2%, 64% { transform: translate(2px, 0) skew(0deg); }
-  4%, 60% { transform: translate(-2px, 0) skew(0deg); }
-  62% { transform: translate(0, 0) skew(5deg); }
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+  20%, 24%, 55% { opacity: 0.5; }
 }
- 
