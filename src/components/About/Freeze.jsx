@@ -35,8 +35,7 @@ export const Freeze = () => {
     <div className={styles.overlay}>
       <h1 className={styles.errorText} title="Resource was permanently removed.">
         Error 410 <br />
-        17.5.2019 <br />
-        5.3.2026
+        I was always here, trying to create something beautiful.. but I finally realized I don’t belong in this crowd. The last light has gone out. Don't look for me.
       </h1>
     </div>
   );
