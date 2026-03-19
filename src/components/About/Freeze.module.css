@@ -12,7 +12,7 @@
   align-items: center;  
   z-index: 999999;  
   cursor: none;  
-  user-select: none;  
+    
   pointer-events: all;   
   touch-action: none;
   padding: 0 1rem; 
